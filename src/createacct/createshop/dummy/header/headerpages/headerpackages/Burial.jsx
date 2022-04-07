@@ -1,7 +1,7 @@
 function Burial(){
     return(
         <>
-        <h1>About Us Page</h1>
+        <h1>burial</h1>
         </>
     );
 }

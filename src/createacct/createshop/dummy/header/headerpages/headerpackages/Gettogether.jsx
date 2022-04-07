@@ -1,7 +1,7 @@
 function GetTogether(){
     return(
         <>
-        <h1>About Us Page</h1>
+        <h1>Get together</h1>
         </>
     );
 }
