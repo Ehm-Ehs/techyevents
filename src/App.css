@@ -576,3 +576,9 @@ transform: scale(1.05)
   border-style: solid;
   border-color: #1e000e;
 }
+
+/* icons */
+.icons{
+  color: #1e000e;
+  size: 400px;
+}

@@ -25,6 +25,7 @@ import GetTogether from './createacct/createshop/dummy/header/headerpages/header
 import Hangout from './createacct/createshop/dummy/header/headerpages/headerpackages/Hangout';
 import CorporateEvents from './createacct/createshop/dummy/header/headerpages/headerpackages/Corporateevents';
 import Burial from './createacct/createshop/dummy/header/headerpages/headerpackages/Burial';
+import Haveaccount from './createacct/createshop/smart/Haveaccount'
 
 
 ReactDOM.render(
@@ -41,6 +42,7 @@ ReactDOM.render(
         <Route path="Loginvendor" element={<Loginvendor/>} />
         <Route path="Support" element={<Support/>} />
         <Route path="PlanmyEvent" element={<PlanmyEvent/>} />
+        <Route path="Haveaccount" element={<Haveaccount/>} />
 {/*------------ services page ------------------------------------*/}
        
         <Route path="Apparel" element={<Apparel/>} />

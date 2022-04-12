@@ -51,8 +51,8 @@ function Header() {
           </li>
           <li>
             <div className="dropdowns">
-              <button className="dropbtn">Have an Account</button>
-              <div className="dropdowncontent">
+              <Link className="Link" to="/Haveaccount">Have an Account</Link>
+              {/* <div className="dropdowncontent">
                 <button>Sign Up</button>
                 <div className="dropdowncontent">
                   <Link Link className="dropdownlinks" to="/Signupvendor"> Sign up as a Vendor</Link>
@@ -63,7 +63,7 @@ function Header() {
                 <div className="dropdowncontent">
                   <Link Link className="dropdownlinks" to="/Loginvendor"> Login as a Vendor</Link>
                   <Link Link className="dropdownlinks" to="/Loginclient"> Login as a Client</Link>
-                </div>
+                </div> */}
 
                 
               </div>
