@@ -29,8 +29,7 @@ function Tablesettings(){
         <>
        
         <div className="headline">
-            <h1>Welcome to our Shopping page/route</h1>
-            <h2> You can now start adding items to your cart </h2>
+            <strong>TABLES </strong>
         </div>
        
         <div>
@@ -43,9 +42,9 @@ function Tablesettings(){
                             <p className="item.description"> {item.description} </p>
                             {/* <span>{"Product quantity: "} {item.quantity} </span>  */}
                             <div className="item.amount">{"product price:"} {item.currencySymbol} {item.amount} </div>
-                            <div className="Add to cart">
-                                <button onClick={() => handleCartItems(item)} className="Add to cart"> Add to cart </button>
-                                <span className="remove"><button onClick={() => handleCartItems(item)}> Remove </button></span>
+                            <div className="cart">
+                                <button onClick={() => handleCartItems(item)} className="Add"> Add to cart </button>
+                                <span><button  className="remove"onClick={() => handleCartItems(item)}> Remove </button></span>
                             </div>
                         </div>
                         

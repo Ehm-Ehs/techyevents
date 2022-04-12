@@ -1,44 +1,24 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 function Planmyevent(){
   const [fullName, setFullName] = useState("null")
   const [emailAddress, setEmailAddress] = useState("null")
-  const [passWord, setPassWord] = useState("null")
-  const [confirmPassWord, setConfirmPassWord] = useState("null")
+  const [occasion, setOccasion] = useState("null")
+  const [venue, setVenue] = useState("null")
+  const [location, setLocation] = useState("null")
+  const [date, setDate] = useState("null")
+  const [theme, setTheme] = useState("null")
+  const [number, setNumber] = useState("null")
+  const [budget, setBudget] = useState("null")
   const [telephone, setTelephone] = useState("null")
   // const [submit, setSubmit] = useState("null")
   useEffect(()=> {
     console.log("component just mounted") 
    }, []);
 
-  const handleFullName = (fullName) =>{
-      console.log("fullName: ",fullName)
-      setFullName(fullName)
-  }
-
-  const handleEmailAddress = (emailAddress) =>{
-    console.log("emailAddress: ",emailAddress)
-    setEmailAddress(emailAddress)
-  }
-
-  const handlePassWord = (passWord) =>{
-    console.log("passWord: ",passWord)
-    setPassWord(passWord)
-  }
-
-  const handleConfirmPassWord = (confirmPassWord) =>{
-    console.log("confirmPassWord: ",confirmPassWord)
-    setConfirmPassWord(confirmPassWord)
-  }
-
-  const handleTelephone = (telephone) =>{
-    console.log("telephone: ",telephone)
-    setTelephone(telephone)
-  }
-
   const handleSubmitEvent = (e) =>{
       e.preventDefault();
-    const stateObject = Object.assign({},  {fullName,emailAddress,passWord,confirmPassWord})
+    const stateObject = Object.assign({},  {fullName,emailAddress,telephone,venue,budget,occasion,theme,number,location,date})
     console.log(stateObject)
   }
 
@@ -46,39 +26,33 @@ function Planmyevent(){
 
   return(
     <> 
-    	<div className="app-authform-signup" >
+    	<div className="planform" >
             <div className="plan">
                 <div className="authform-title" >
                     <h1 >Plan my Event</h1>
                     <p>Let us plan that memorable event.</p>
                 </div>
             </div>
-            <div className="authform-signup" onSubmit={ handleSubmitEvent}>
-                <input onChange={(e)=>handleFullName(e.target.value)} type="text" placeholder="Full Name" className="Fullname" required/>
+            <div className="planfield" onSubmit={ handleSubmitEvent}>
+                <input onChange={(e)=>setFullName(e.target.value)} type="text" placeholder="Full Name" className="field" required/>
         
-                <input onChange={(e)=>handleEmailAddress(e.target.value)} type="text" placeholder="Enter Email" className="Email Address" required/>
+                <input onChange={(e)=>setEmailAddress(e.target.value)} type="text" placeholder="Enter Email" className="field" required/>
         
-                <input onChange={(e)=>handlePassWord(e.target.value)} type="password" placeholder="Enter Password" className="Password" required/>
-        
-                <input onChange={(e)=>handleConfirmPassWord(e.target.value)} type="password" placeholder="Confirm Password" className="Confirm Password" required/>
-
-                <input type="text" className="app-login-input phone" name="Phone Number" placeholder="Phone Number"/>
+                <input type="text" onChange={(e)=>setTelephone(e.target.value)} className="field" placeholder="Phone Number"/>
             
-                <input type="text" className="app-login-input event" name="Event" placeholder="Event/Occasion"/>
+                <input type="text" onChange={(e)=>setOccasion(e.target.value)} className="field" placeholder="Event/Occasion"/>
 
-                <input type="text" className="app-login-input location" name="Location" placeholder="Event Location"/>
+                <input type="text" onChange={(e)=>setLocation(e.target.value)} className="field" placeholder="Event Location"/>
 
-                <input type="text" className="app-login-input date" name="Date" placeholder="Date of Event"/>
+                <input type="text" onChange={(e)=>setDate(e.target.value)} className="field" placeholder="Date of Event"/>
 
-                <input type="text" className="app-login-input venue" name="Venue" placeholder="Venue"/>
+                <input type="text" onChange={(e)=>setVenue(e.target.value)} className="field" placeholder="Venue"/>
 
-                <input type="text" className="app-login-input location" name="Location" placeholder="Event Location"/>
+                <input type="text" onChange={(e)=>setTheme(e.target.value)} className="field" placeholder="Theme of Decor(If Any)"/>
 
-                <input type="text" className="app-login-input theme" name="Theme" placeholder="Theme of Decor(If Any)"/>
+                <input type="text" onChange={(e)=>setNumber(e.target.value)} className="field" placeholder="Number of Expected Guests"/>
 
-                <input type="text" className="app-login-input number" name="Number" placeholder="Number of Expected Guests"/>
-
-                <input type="text" className="app-login-input budget" name="Budget" placeholder="Budget(If Any)"/>
+                <input type="text" onChange={(e)=>setBudget(e.target.value)} className="field" placeholder="Budget(If Any)"/>
 
             </div>
             <div>
@@ -87,7 +61,7 @@ function Planmyevent(){
                 <hr />
           </div>
           <div className="menu">
-                <strong>Food</strong>
+                <strong className="head">Food</strong>
                 <div className="list-food">
                     <input type="checkbox" id="food1" name="food1" value="Nigeria Dishes" />
 
@@ -116,7 +90,7 @@ function Planmyevent(){
                 </div>
                 
                 <hr/>
-                <strong>Drinks</strong>
+                <strong className="head">Drinks</strong>
                 <div className="list-drinks">
 
                     <input type="checkbox" id="drink1" name="drinks1" value="Alcoholic Cocktails"  /> 
@@ -143,74 +117,64 @@ function Planmyevent(){
 
                 <hr/>
 
-            <strong>Beverages</strong>
-            <div className="list-beverages">
-              <input type="checkbox" id="beverages1" name="beverages1" value="Tea" /> 
-                
-                <label for="beverages1">Tea</label> 
+                <strong className="head">Beverages</strong>
+                <div className="list-beverages">
+                <input type="checkbox" id="beverages1" name="beverages1" value="Tea" /> 
+                    
+                    <label for="beverages1">Tea</label> 
 
-              <input type="checkbox" id="beverages2" name="beverages2" value="Coffee" /> 
-                  
-                  <label for="beverages2"> Coffee</label> 
+                <input type="checkbox" id="beverages2" name="beverages2" value="Coffee" /> 
+                    
+                    <label for="beverages2"> Coffee</label> 
 
-              <input type="checkbox" id="beverages3" name="beverages3" value="Cappuccino" /> 
-                  
-                  <label for="beverages3"> Cappuccino</label> 
+                <input type="checkbox" id="beverages3" name="beverages3" value="Cappuccino" /> 
+                    
+                    <label for="beverages3"> Cappuccino</label> 
 
-              <input type="checkbox" id="beverages4" name="beverages4" value="Hot Chocolates Drinks" /> 
-                  
-                  <label for="beverages4"> Hot Chocolates Drinks</label> 
+                <input type="checkbox" id="beverages4" name="beverages4" value="Hot Chocolates Drinks" /> 
+                    
+                    <label for="beverages4"> Hot Chocolates Drinks</label> 
 
-              <input type="checkbox" id="beverages5" name="beverages5" value="Other Drinks" /> 
-                
-                <label for="beverages5"> Other Drinks</label> 
+                <input type="checkbox" id="beverages5" name="beverages5" value="Other Drinks" /> 
+                    
+                    <label for="beverages5"> Other Drinks</label> 
 
+                </div>
             </div>
 
-            <hr/>
+                <hr/>
 
             <div className="Services">
-    
-            <h3>Other Services</h3>
-
-            <div className="list-services">
-                <input type="checkbox" id="services1" name="services1" value="Events Coordination" /> 
-                
-                    <label for="services1"> Events Coordination</label> 
-
-                <input type="checkbox" id="services2" name="services2" value="Marquee Rental/Hire" /> 
-                
-                    <label for="services2"> Marquee Rental/Hire</label> 
-
-                <input type="checkbox" id="services3" name="services3" value="Photography" /> 
-                    
-                    <label for="services3"> Photography</label> 
-
-                <input type="checkbox" id="services4" name="services4" value="Videography" /> 
-                
-                    <label for="services4"> Videography</label> 
-
-                <input type="checkbox" id="services5" name="services5" value="VLive Band" /> 
-                    
-                    <label for="services5"> Live Band</label> 
-            </div>
-        </div>
-                </div>
-                </div>
         
+                <strong className="head">Other Services</strong>
 
+                <div className="list-services">
+                    <input type="checkbox" id="services1" name="services1" value="Events Coordination" /> 
+                        
+                        <label for="services1"> Events Coordination</label> 
 
+                    <input type="checkbox" id="services2" name="services2" value="Marquee Rental/Hire" /> 
+                        
+                        <label for="services2"> Marquee Rental/Hire</label> 
 
-      {/* 
-          
-         */}
-          {/* 
-         
-          <div>
-            <input type="text"  className="message" name="Message(If Any)" placeholder="Message(If Any)" />
-            <button type="button" onclick="Submit">Submit</button>
-          </div>
-      </div>  */}
+                    <input type="checkbox" id="services3" name="services3" value="Photography" /> 
+                            
+                        <label for="services3"> Photography</label> 
+
+                    <input type="checkbox" id="services4" name="services4" value="Videography" /> 
+                        
+                        <label for="services4"> Videography</label> 
+
+                    <input type="checkbox" id="services5" name="services5" value="VLive Band" /> 
+                            
+                        <label for="services5"> Live Band</label> 
+                </div>
+                <div>
+                    <input type="text"  className="message" name="Message(If Any)" placeholder="Message(If Any)" />
+                    <button type="button" onClick={(e)=>setBudget(e.target.value)}>Submit</button>
+                </div>
+            </div>
+      </div>
     </>
    )
 }

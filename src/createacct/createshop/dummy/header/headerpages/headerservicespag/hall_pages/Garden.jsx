@@ -3,10 +3,10 @@ const PRODUCTS = [
     {name: "Open Fame", description: "biggest size",Location: "Lagos", amount: 28.99, currency: "Euro", currencySymbol: "€", img:"https://blog.sugar.ng/files/styles/width-640/public/decor6.png?itok=igXMvpRm" },
     {name: "Posh Vibes",  description: "comfy and open ",Location: "Abuja", amount: 42.99, currency: "Euro", currencySymbol: "€", img:"https://blog.sugar.ng/files/styles/width-640/public/decor4.png?itok=lg2XBWBc" },
     {name: "Garden of Love", description: "Garden",Location: "Kaduna", amount: 15.99, currency: "Euro", currencySymbol: "€", img:"https://blog.sugar.ng/files/styles/width-640/public/decor3.png?itok=mRCt8N34" },
-    {name: "Destination Vibes", description: "picture worthy",Location: "portharcort", amount: 35.99, currency: "Euro", currencySymbol: "€", img:"https://blog.sugar.ng/files/styles/width-640/public/decor5.png?itok=0orxxOkQ"},
-    {name: "Reuseable bamboo towels", description: "All-purpose Washable Kitchen Roll",Location: "white", amount: 20.99, currency: "Euro", currencySymbol: "€", img:"https://m.media-amazon.com/images/I/71j0vTEWnGL._AC_SL1500_.jpg" },
-    {name: "Prestige eco stirfry wok",  description: "100% Plant based & palm-oil free nonstick pan",Location: "green", amount: 33.99, currency: "Euro", currencySymbol: "€", img:"https://m.media-amazon.com/images/I/71j0vTEWnGL._AC_SL1500_.jpg" },
-    {name: "compostable sponges", description: "100% Plant based Sponge made from cellulose",Location: "ginger brown", amount: 25.99, currency: "Euro", currencySymbol: "€", img:"https://m.media-amazon.com/images/I/71j0vTEWnGL._AC_SL1500_.jpg" },
+    {name: "Evergreen", description: "picture worthy",Location: "portharcort", amount: 35.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/c7/81/d4/c781d4fce75584a4c996554ba8f2ceb7.jpg"},
+    {name: "Garden fairy", description: "Fairy tale vibes",Location: "Ilorin", amount: 20.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/a0/f7/20/a0f720758f8a43db526c4eabc020cb99.jpg" },
+    {name: "Nature",  description: "Garden + water",Location: "Lagos", amount: 33.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/80/ec/b5/80ecb58942365d93e86bb1a321b6c34f.jpg" },
+    {name: "Flowers bloom", description: "flowery scene",Location: "Jos", amount: 25.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/a6/02/12/a60212823b713f68ee39dc22182483f2.jpg" },
 ]
 function Garden(){
    
@@ -29,8 +29,7 @@ function Garden(){
         <>
        
         <div className="headline">
-            <h1>Welcome to our Shopping page/route</h1>
-            <h2> You can now start adding items to your cart </h2>
+            <strong>GARDEN </strong>
         </div>
        
         <div>
@@ -43,9 +42,9 @@ function Garden(){
                             <p className="item.description"> {item.description} </p>
                             {/* <span>{"Product quantity: "} {item.quantity} </span>  */}
                             <div className="item.amount">{"product price:"} {item.currencySymbol} {item.amount} </div>
-                            <div className="Add to cart">
-                                <button onClick={() => handleCartItems(item)} className="Add to cart"> Add to cart </button>
-                                <span className="remove"><button onClick={() => handleCartItems(item)}> Remove </button></span>
+                            <div className="cart">
+                                <button onClick={() => handleCartItems(item)} className="Add"> Add to cart </button>
+                                <span><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
                             </div>
                         </div>
                         

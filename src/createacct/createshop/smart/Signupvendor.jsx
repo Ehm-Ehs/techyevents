@@ -45,7 +45,7 @@ const handleLocation = (location) =>{
   
   const handleSubmitEvent = (e) =>{
       e.preventDefault();
-    const stateObject = Object.assign({},  {fullName,emailAddress,passWord,confirmPassWord})
+    const stateObject = Object.assign({},  {fullName,emailAddress,location, businessName,passWord,confirmPassWord})
     console.log(stateObject)
   }
 

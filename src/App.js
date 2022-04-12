@@ -8,8 +8,8 @@ function App() {
         <div className="general">
             <div className="first">
                 <div className="subfirst">
-                    <h1 className="top"> Bringing your dream event to life without you stressing is our job</h1>
-                    <p className="top">Our experts are the best at your finger tip</p>
+                    <p> Bringing your dream event to life without you stressing is our job</p>
+                    <p>Our experts are the best at your finger tip</p>
                 </div>
             </div>
                 <div className="second">
@@ -25,7 +25,7 @@ function App() {
                         </div>
                     </div>
                     <div className= "subthird">
-                     <img src="https://www.brides.com/thmb/SDk4xCUR6rdP6pvg6CqZpxJuBdo=/750x0/filters:no_upscale():max_bytes(200000):strip_icc():format(webp)/SQ-935c5aa68f7e422e9a100786ca9db7cc.jpg" alt="decorations"/>
+                     <img src="https://www.bellanaijaweddings.com/wp-content/uploads/2022/04/Halima-Olaitan-Wedding-BellaNaija-Weddings-104-1536x1024.jpg" alt="decorations"/>
                       <div className="thirdtext"> 
                         <p><strong>Decorations</strong></p>
                         <p>We provide decor with glamour to your event.The “wow”factor is guaranteed</p>
@@ -40,7 +40,7 @@ function App() {
                     </div>
                 </div>
                 <div className="forth">
-                    <img src="https://cdn0.hitched.co.uk/article/7521/original/960/jpg/81257-nigerian-bridal-veil-1300x1950.webp" alt="about us"/>
+                    <img src="https://i.pinimg.com/564x/72/2a/ef/722aef3a4d9aac133545c485429a4b34.jpg" alt="about us"/>
                     <div className="subforth">    
                         <p><strong>About Us</strong></p>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore odit reprehenderit culpa quisquam. Doloribus qui suscipit repellat molestiae distinctio iusto atque temporibus expedita et! Magnam laborum et cupiditate dolore harum</p>

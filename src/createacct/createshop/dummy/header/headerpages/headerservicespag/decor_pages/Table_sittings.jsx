@@ -10,7 +10,7 @@ const PRODUCTS = [
     {name: "Flowers on bars",  description: "combination of flowers on bars",amount: 33.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/02/Dami-Gbenga-GDvibes-Wedding-BellaNaija-Weddings.171.jpg" },
     {name: "Flowers on bars",  description: "combination of flowers on bars",amount: 33.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/2e/7e/da/2e7edae1d757dd4bd6d7255e8c18e952.jpg" },
     ]
-function backdrop(){
+function Backdrop(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -31,8 +31,7 @@ function backdrop(){
         <>
        
         <div className="headline">
-            <h1>Welcome to our Shopping page/route</h1>
-            <h2> You can now start adding items to your cart </h2>
+            <strong>BACKDROPS</strong>
         </div>
        
         <div>
@@ -45,9 +44,9 @@ function backdrop(){
                             <p className="item.description"> {item.description} </p>
                             {/* <span>{"Product quantity: "} {item.quantity} </span>  */}
                             <div className="item.amount">{"product price:"} {item.currencySymbol} {item.amount} </div>
-                            <div className="Add to cart">
-                                <button onClick={() => handleCartItems(item)} className="Add to cart"> Add to cart </button>
-                                <span className="remove"><button onClick={() => handleCartItems(item)}> Remove </button></span>
+                            <div className="cart">
+                                <button onClick={() => handleCartItems(item)} className="Add"> Add to cart </button>
+                                <span><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
                             </div>
                         </div>
                         
@@ -73,4 +72,4 @@ function backdrop(){
         </>
     )
 }
-export default Garden;
+export default Backdrop;
