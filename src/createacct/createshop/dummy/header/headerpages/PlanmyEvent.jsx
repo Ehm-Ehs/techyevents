@@ -170,7 +170,7 @@ function Planmyevent(){
                         <label for="services5"> Live Band</label> 
                 </div>
                 <div>
-                    <input type="text"  className="message" name="Message(If Any)" placeholder="Message(If Any)" />
+                    <input type="text"  className="field" placeholder="Message(If Any)" />
                     <button type="button" onClick={(e)=>setBudget(e.target.value)}>Submit</button>
                 </div>
             </div>

@@ -99,7 +99,7 @@ const handleLocation = (location) =>{
               <div>
                 <table>
                   <tr>
-                    <td><p>Already a Member</p></td>
+                    <td><p>Already a Member?</p></td>
                     <td><Link className="logLinks"to="/Loginvendor">Log In</Link></td>
                   </tr>
                 </table>

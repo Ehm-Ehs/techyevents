@@ -261,6 +261,12 @@ border-bottom-right-radius: 100px;
   color: #1e000e;
 }
 
+.logLinks {
+  color: #1e000e;
+  text-decoration: none;
+  }
+   
+
 .left {
   position: absolute;
   top: 0;
@@ -433,17 +439,18 @@ button.social-signin.google {
 
 .field{
   display: block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin-bottom: 20px;
   margin-left: 150px;
   font-weight: 400;
   font-size: 15px;
   transition: 0.2s ease;
+  width: 100px;
 } 
 
 input [type="text"]{ 
   padding: 4px;
-  width: 0px;
+  width: 100px;
   height: 32px;
   border: none;
   border-bottom: 1px solid #AAA;
@@ -580,5 +587,29 @@ transform: scale(1.05)
 /* icons */
 .icons{
   color: #1e000e;
-  size: 400px;
+  size: 2000px;
+  height: 300px;
+  width:500px ;
+  
+}
+
+.acct{
+  display: flex;
+}
+
+.subacct{
+  display: block;
+  padding-top: 50px;
+  padding-left: 30px;
+  margin: 80px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #fcd0a1;
+  border-radius: 100px;
+}
+#accttext{
+  padding-left: 150px;
+  color: #1e000e;
+  text-decoration: none;
+  font-size: 28px;
 }

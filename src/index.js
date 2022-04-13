@@ -8,7 +8,7 @@ import Aboutus from'./createacct/createshop/dummy/header/headerpages/Aboutus';
 import Signupclient from'./createacct/createshop/smart/Signupclient';
 import Signupvendor from'./createacct/createshop/smart/Signupvendor';
 import Loginclient from'./createacct/createshoping/smart/Loginclient';
-import Loginvendor from'./createacct/createshop/smart/Signupvendor';
+import Loginvendor from'./createacct/createshoping/smart/Loginvendor';
 import Support from'./createacct/createshop/dummy/header/headerpages/Support';
 import PlanmyEvent from'./createacct/createshop/dummy/header/headerpages/PlanmyEvent';
 import Header from'./createacct/createshop/dummy/header/Header';
@@ -25,7 +25,9 @@ import GetTogether from './createacct/createshop/dummy/header/headerpages/header
 import Hangout from './createacct/createshop/dummy/header/headerpages/headerpackages/Hangout';
 import CorporateEvents from './createacct/createshop/dummy/header/headerpages/headerpackages/Corporateevents';
 import Burial from './createacct/createshop/dummy/header/headerpages/headerpackages/Burial';
-import Haveaccount from './createacct/createshop/smart/Haveaccount'
+import Haveaccount from './createacct/createshop/smart/Haveaccount';
+import Asclient from './createacct/createshop/smart/Asclient'
+import Asvendor from './createacct/createshop/smart/Asvendor'
 
 
 ReactDOM.render(
@@ -43,6 +45,8 @@ ReactDOM.render(
         <Route path="Support" element={<Support/>} />
         <Route path="PlanmyEvent" element={<PlanmyEvent/>} />
         <Route path="Haveaccount" element={<Haveaccount/>} />
+        <Route path="Asclient" element={<Asclient/>} />
+        <Route path="Asvendor" element={<Asvendor/>} />
 {/*------------ services page ------------------------------------*/}
        
         <Route path="Apparel" element={<Apparel/>} />

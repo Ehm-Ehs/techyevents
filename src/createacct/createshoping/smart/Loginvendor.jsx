@@ -50,8 +50,8 @@ const handleSubmitEvent = (e) =>{
                         <div>
                             <table>
                                 <tr>
-                                    <td><p>New Member</p></td>
-                                    <td><Link className="logLinks"to="/Signupvendort">Sign up</Link></td>
+                                    <td><p>New Vendor ?</p></td>
+                                    <td><Link className="logLinks"to="/Signupvendor">Sign up</Link></td>
                                 </tr>
                             </table>
                        
