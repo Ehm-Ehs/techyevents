@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 
@@ -13,7 +14,7 @@ function App() {
                 </div>
             </div>
                 <div className="second">
-                    <strong>Get your special day, events and meetings planned with just a click </strong>
+                    <strong>Get your special day, events and meetings planned with just a <Link className="logLinks1"to="/PlanmyEvent">click</Link> </strong>
                     <p>You give the instructions of your plan we bring it to reality </p>
                 </div>
                 <div className="third">
@@ -44,7 +45,7 @@ function App() {
                     <div className="subforth">    
                         <p><strong>About Us</strong></p>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore odit reprehenderit culpa quisquam. Doloribus qui suscipit repellat molestiae distinctio iusto atque temporibus expedita et! Magnam laborum et cupiditate dolore harum</p>
-                        <button>Read More</button> 
+                        <button><Link className="Link"to="/Aboutus">Read More</Link></button> 
                     </div>
                 </div>
                 <div className="fifth">

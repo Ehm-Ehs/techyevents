@@ -12,6 +12,9 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
 }
+button{
+  font-family: 'Cormorant Garamond', serif;
+}
 
 /*------- header--------*/
 
@@ -214,6 +217,12 @@ border-bottom-right-radius: 100px;
 .sixth{
   text-align: center;
 }
+.logLinks1 {
+  color: #1e000e;
+  text-decoration: none;
+  background-color:rgba( 130, 48, 56, 0.2) ;
+  }
+   
 
 
 /* body */
@@ -294,7 +303,7 @@ input[type="password"] {
   height: 32px;
   border: none;
   border-bottom: 1px solid #AAA;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
   font-size: 15px;
   transition: 0.2s ease;
@@ -429,6 +438,10 @@ button.social-signin.google {
 
 /*------------------- plan my event------------------------- */
 
+.plan{
+  padding-top: 30px;
+}
+
  .planfield{
   height: 50px;
   width: 100%;
@@ -437,60 +450,18 @@ button.social-signin.google {
   color:  #1e000e;
 }
 
-.field{
+#field{
   display: block;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin-bottom: 20px;
   margin-left: 150px;
   font-weight: 400;
   font-size: 15px;
   transition: 0.2s ease;
-  width: 100px;
+  width: 500px;
+  border-radius: 50px;
 } 
 
-input [type="text"]{ 
-  padding: 4px;
-  width: 100px;
-  height: 32px;
-  border: none;
-  border-bottom: 1px solid #AAA;
-
-}
-
-input[type="text"]:focus {
-  border-bottom: 2px solid rgba( 130, 48, 56, 0.1);
-  color:  #1e000e;
-  background-color: rgba( 130, 48, 56, 0.1);
-  transition: 0.2s ease;
-}
-
-o input[type="submit"] {
-  margin-top: 18px;
-  width: 150px;
-  height: 32px;
-  border: none;
-  border-radius: 2px;
-  color: #1e000e;
-  background-color: rgba( 130, 48, 56, 0.1);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 0.1s ease;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-  opacity: 0.8;
-  box-shadow: 0 2px 4px #deba6f;
-  transition: 0.1s ease;
-}
-
-input[type="submit"]:active {
-  opacity: 1;
-  box-shadow: 0 1px 2px #deba6f;
-  transition: 0.1s ease;
-}
 
 .planform{
   position: relative;
@@ -512,9 +483,43 @@ input[type="submit"]:active {
   color: #000;
 }
 
+.vendors{
+  padding-top: 20px;
+  font-weight: 900;
+}
+
 .head{
 font-family: 'Beau Rivage', cursive; 
 } 
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #1e000e;
+  border-width: 5px;
+  width: 10%;
+}
+
+.event{
+    background-color: #823038;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba( 130, 48, 56, 0.2) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    color:  #fcd0a1;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    height: 50px;
+    width:80px;
+    /* padding: 0 25px; */
+    transition: all 200ms;
+  }
+    
+  .event:hover{ 
+  background-color: rgba( 130, 48, 56, 0.2);
+  transform: scale(1.05)
+  }
+
  
 
 /* carts0 */
@@ -536,7 +541,6 @@ display:flex;
   color:  #fcd0a1;
   cursor: pointer;
   display: inline-block;
-  font-family: Arial,sans-serif;
   font-size: 1em;
   height: 50px;
   width:80px;
@@ -561,7 +565,6 @@ transform: scale(1.05)
   font-size: 1em;
   height: 50px;
   width:80px;
-  /* padding: 0 25px; */
   transition: all 200ms;
 }
   
@@ -612,4 +615,43 @@ transform: scale(1.05)
   color: #1e000e;
   text-decoration: none;
   font-size: 28px;
+}
+
+/* aboutus */
+.about{
+  padding-left: 100px;
+}
+
+.subabout1{
+  font-family: 'Beau Rivage', cursive;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 500px;
+}
+
+.subabout3{
+text-align: center;
+padding-left: 50px;
+}
+.subabout2{
+  padding-left: 50px; 
+}
+
+.review{
+  text-align: center;
+  padding-right: 100px;
+  padding-top: 30px;
+  
+}
+
+.re{
+  padding-top: 20px;
+}
+
+.r{
+  padding: 30px 0px 20px 50px;
+  font-weight: 700px;
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }

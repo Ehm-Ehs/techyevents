@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 const PRODUCTS = [
-    {name: "Bridal makeup", description: "bridal makeup",amount: 30000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkv3Zx-8W00Xihb-fKinU4MCCkoQy3YmqRQ&usqp=CAU" },
-    {name: "Traditional makeup",  description: "Traditional makeup", amount: 20000, currency: "Naira", currencySymbol: "#", img:"https://i.ytimg.com/vi/j0YBz_S_AGQ/maxresdefault.jpg" },
-
-]
-function Makeup(){
+    {name: "mixed", description: "two tribes as one",amount: 1500, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/04/Nonye-Ayo-Wedding-BellaNaija-Weddings-171-scaled.jpg" },
+    {name: "Yoruba trad",  description: "tribe trad ", amount: 42000, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Sanmi-Tobi-Trad-Wedding-BellaNaija-Weddings-291-scaled.jpg" },
+    {name: "Igbo trad", description: "Drop down chandalier lights", amount: 300000, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Kelechi-Martins-Trad-BellaNaija-Weddings-14-scaled.jpg"},
+    {name: "Kamu", description:"Hausa trad", amount: 20099, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2021/12/Safinat-Ben-Kamu-BellaNaija-Weddings.032.jpg" },
+  ]
+function Trad(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -25,7 +26,7 @@ function Makeup(){
         <>
        
         <div className="headline">
-            <strong>Chops</strong>
+            <strong>Trad</strong>
         </div>
        
         <div>
@@ -40,7 +41,7 @@ function Makeup(){
                             <div className="item.amount">{"product price:"} {item.currencySymbol} {item.amount} </div>
                             <div className="cart">
                                 <button onClick={() => handleCartItems(item)} className="Add"> Add to cart </button>
-                                <span ><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
+                                <span><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
                             </div>
                         </div>
                         
@@ -66,4 +67,4 @@ function Makeup(){
         </>
     )
 }
-export default Makeup;
+export default Trad;

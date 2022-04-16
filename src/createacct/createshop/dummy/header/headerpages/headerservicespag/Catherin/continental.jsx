@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 const PRODUCTS = [
-    {name: "Bridal makeup", description: "bridal makeup",amount: 30000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkv3Zx-8W00Xihb-fKinU4MCCkoQy3YmqRQ&usqp=CAU" },
-    {name: "Traditional makeup",  description: "Traditional makeup", amount: 20000, currency: "Naira", currencySymbol: "#", img:"https://i.ytimg.com/vi/j0YBz_S_AGQ/maxresdefault.jpg" },
-
+    {name: "prawn pakoda", description: "prawn",amount: 3000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlmBL-eJeW_VXhVmkwItRUDUhDOrT7ItAoQ&usqp=CAU" },
+    {name: "lopster thermidor",  description: "lopster", amount: 3500, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzHNogEK1QAD9MpLZgoSS_mmzkyVuUk494Q&usqp=CAU" },
+    {name: "panne", description: "panne", amount: 2500, currency: "Nigeria", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWe1JfqVOlTQGw6XBHHoDiE5_S6dgqYroYXA&usqp=CAU" },
+    {name: "hashbrown", description: "hashbrown", amount: 2000, currency: "Nigeria", currencySymbol: "#", img:"https://static.toiimg.com/thumb/msid-84287895/84287895.jpg?width=500&resizemode=4"},
+    {name: "chicken marsala", description:"chicken marsala", amount: 3500, currency: "Naira", currencySymbol: "#", img:"https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Continental-for-Four_exps43085_TH1789930B04_07_1bC_RMS.jpg" },
 ]
-function Makeup(){
+function Continental(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -25,7 +27,7 @@ function Makeup(){
         <>
        
         <div className="headline">
-            <strong>Chops</strong>
+            <strong>THEME</strong>
         </div>
        
         <div>
@@ -66,4 +68,4 @@ function Makeup(){
         </>
     )
 }
-export default Makeup;
+export default Continental;

@@ -1,10 +1,15 @@
 import React, {useState} from "react";
 const PRODUCTS = [
-    {name: "Bridal makeup", description: "bridal makeup",amount: 30000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkv3Zx-8W00Xihb-fKinU4MCCkoQy3YmqRQ&usqp=CAU" },
-    {name: "Traditional makeup",  description: "Traditional makeup", amount: 20000, currency: "Naira", currencySymbol: "#", img:"https://i.ytimg.com/vi/j0YBz_S_AGQ/maxresdefault.jpg" },
-
+    {name: "initimate", description: "private with just family and friends",amount: 28.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Bukola-Doyin-Wedding-BellaNaija-Weddings-177-1536x1024.jpg" },
+    {name: "Forest Chops",  description: "Nature feel ", amount: 42.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Dara-TY-Wedding-BellaNaija-Weddings-54-1536x1026.jpg" },
+    {name: "Fairy tale", description: "showers of fairy",amount: 15.99, currency: "Euro", currencySymbol: "€", img:"https://i.pinimg.com/564x/21/ae/f2/21aef2d06608361beeb3d04279725e09.jpg" },
+    {name: "Beach not on Beach", description: "Beach vibes",amount: 35.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Melody-Egie-Trad-BellaNaija-Weddings-187-1536x1024.jpg"},
+    {name: "Outdoor ", description: " out in the open",amount: 20.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/04/Nonye-Ayo-Wedding-BellaNaija-Weddings-31-1536x1024.jpg" },
+    {name: "Garden Chops",  description: "garden vibe",amount: 33.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Louisa-Okechukwu-Weddings-BellaNaija-Weddings-231-1536x1017.jpg" },
+    {name: "Dark ", description: "dark with fall of light",amount: 25.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/02/Dami-Gbenga-GDvibes-Wedding-BellaNaija-Weddings.169.jpg" },
+    {name: "Simple ", description: "Simple but chic",amount: 25.99, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/02/Nicole-Ifeanyi-Wedding-BellaNaija-Weddings-332-1536x1024.jpg" },
 ]
-function Makeup(){
+function Chops(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -66,4 +71,4 @@ function Makeup(){
         </>
     )
 }
-export default Makeup;
+export default Chops;

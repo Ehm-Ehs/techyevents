@@ -1,7 +1,12 @@
+import Nigerian from "../headerservicespag/Catherin/nigerian";
+import Continental from "../headerservicespag/Catherin/continental"
 function Cathering(){
     return(
         <>
-        <h1>About Us Page</h1>
+        <h1>Cathering</h1>
+        <Nigerian/>
+        <Continental/>
+
         </>
     );
 }

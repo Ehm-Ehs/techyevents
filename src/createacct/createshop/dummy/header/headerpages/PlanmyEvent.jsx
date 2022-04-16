@@ -28,35 +28,32 @@ function Planmyevent(){
     <> 
     	<div className="planform" >
             <div className="plan">
-                <div className="authform-title" >
-                    <h1 >Plan my Event</h1>
-                    <p>Let us plan that memorable event.</p>
-                </div>
+                <p>Let us plan that memorable event.</p>
             </div>
             <div className="planfield" onSubmit={ handleSubmitEvent}>
-                <input onChange={(e)=>setFullName(e.target.value)} type="text" placeholder="Full Name" className="field" required/>
+                <input onChange={(e)=>setFullName(e.target.value)} type="text" placeholder="Full Name" id="field" required/>
         
-                <input onChange={(e)=>setEmailAddress(e.target.value)} type="text" placeholder="Enter Email" className="field" required/>
+                <input onChange={(e)=>setEmailAddress(e.target.value)} type="text" placeholder="Enter Email" id="field" required/>
         
-                <input type="text" onChange={(e)=>setTelephone(e.target.value)} className="field" placeholder="Phone Number"/>
+                <input type="text" onChange={(e)=>setTelephone(e.target.value)} id="field" placeholder="Phone Number"/>
             
-                <input type="text" onChange={(e)=>setOccasion(e.target.value)} className="field" placeholder="Event/Occasion"/>
+                <input type="text" onChange={(e)=>setOccasion(e.target.value)} id="field" placeholder="Event/Occasion"/>
 
-                <input type="text" onChange={(e)=>setLocation(e.target.value)} className="field" placeholder="Event Location"/>
+                <input type="text" onChange={(e)=>setLocation(e.target.value)} id="field" placeholder="Event Location"/>
 
-                <input type="text" onChange={(e)=>setDate(e.target.value)} className="field" placeholder="Date of Event"/>
+                <input type="text" onChange={(e)=>setDate(e.target.value)} id="field" placeholder="Date of Event"/>
 
-                <input type="text" onChange={(e)=>setVenue(e.target.value)} className="field" placeholder="Venue"/>
+                <input type="text" onChange={(e)=>setVenue(e.target.value)} id="field" placeholder="Venue"/>
 
-                <input type="text" onChange={(e)=>setTheme(e.target.value)} className="field" placeholder="Theme of Decor(If Any)"/>
+                <input type="text" onChange={(e)=>setTheme(e.target.value)} id="field" placeholder="Theme of Decor(If Any)"/>
 
-                <input type="text" onChange={(e)=>setNumber(e.target.value)} className="field" placeholder="Number of Expected Guests"/>
+                <input type="text" onChange={(e)=>setNumber(e.target.value)} id="field" placeholder="Number of Expected Guests"/>
 
-                <input type="text" onChange={(e)=>setBudget(e.target.value)} className="field" placeholder="Budget(If Any)"/>
+                <input type="text" onChange={(e)=>setBudget(e.target.value)} id="field" placeholder="Budget(If Any)"/>
 
             </div>
             <div>
-                <h1>List of Vendors/Services</h1>
+                <h1 className="vendors">List of Vendors/Services</h1>
                 <p>Please tick box/service you require</p>
                 <hr />
           </div>
@@ -169,10 +166,12 @@ function Planmyevent(){
                             
                         <label for="services5"> Live Band</label> 
                 </div>
+                <hr/>
                 <div>
-                    <input type="text"  className="field" placeholder="Message(If Any)" />
-                    <button type="button" onClick={(e)=>setBudget(e.target.value)}>Submit</button>
+                    <input type="text"  id="field" placeholder="Message(If Any)" />
+                   
                 </div>
+                <button  className="event" type="submit" onClick={(e)=>setBudget(e.target.value)}>Submit</button>
             </div>
       </div>
     </>

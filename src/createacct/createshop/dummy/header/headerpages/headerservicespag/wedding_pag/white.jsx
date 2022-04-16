@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 const PRODUCTS = [
-    {name: "Bridal makeup", description: "bridal makeup",amount: 30000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkv3Zx-8W00Xihb-fKinU4MCCkoQy3YmqRQ&usqp=CAU" },
-    {name: "Traditional makeup",  description: "Traditional makeup", amount: 20000, currency: "Naira", currencySymbol: "#", img:"https://i.ytimg.com/vi/j0YBz_S_AGQ/maxresdefault.jpg" },
-
-]
-function Makeup(){
+    {name: "white",amount: 1500, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/03/Loretta-Gbolahan-Wedding-BellaNaija-Weddings-13-2-scaled.jpg" },
+    {name: "Nikkah", amount: 42000, currency: "Euro", currencySymbol: "€", img:"https://www.bellanaijaweddings.com/wp-content/uploads/2022/04/Stunners-Gele-Nikkah-Beauty-Look7959931_349016457034035_4686701426033880187_n.jpg" },
+    ]
+function White(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -25,7 +24,7 @@ function Makeup(){
         <>
        
         <div className="headline">
-            <strong>Chops</strong>
+            <strong>White</strong>
         </div>
        
         <div>
@@ -40,7 +39,7 @@ function Makeup(){
                             <div className="item.amount">{"product price:"} {item.currencySymbol} {item.amount} </div>
                             <div className="cart">
                                 <button onClick={() => handleCartItems(item)} className="Add"> Add to cart </button>
-                                <span ><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
+                                <span><button className="remove" onClick={() => handleCartItems(item)}> Remove </button></span>
                             </div>
                         </div>
                         
@@ -66,4 +65,4 @@ function Makeup(){
         </>
     )
 }
-export default Makeup;
+export default White;

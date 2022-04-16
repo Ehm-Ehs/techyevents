@@ -14,7 +14,7 @@ function Header() {
             <Link className="Link"to="/"> Home </Link>
           </li>
           <li>
-            <Link className="Link"to="/About">AboutUs</Link>
+            <Link className="Link"to="/Aboutus">AboutUs</Link>
           </li> 
           <li>
             <div className="dropdowns">
@@ -37,7 +37,7 @@ function Header() {
                 <Link className="dropdownlinks" to="/Birthday">Birthday</Link>
                 <Link className="dropdownlinks" to="/Wedding">Wedding</Link>
                 <Link className="dropdownlinks" to="/GetTogether">Get Together</Link>
-                <Link className="dropdownlinks" to="/Hangout">Makeup</Link>
+                <Link className="dropdownlinks" to="/Hangout">Hangout</Link>
                 <Link className="dropdownlinks" to="/CoporateEvent">Corporate Events</Link>
                 <Link className="dropdownlinks" to="/Burial">Burial</Link>
               </div>
@@ -52,21 +52,7 @@ function Header() {
           <li>
             <div className="dropdowns">
               <Link className="Link" to="/Haveaccount">Have an Account</Link>
-              {/* <div className="dropdowncontent">
-                <button>Sign Up</button>
-                <div className="dropdowncontent">
-                  <Link Link className="dropdownlinks" to="/Signupvendor"> Sign up as a Vendor</Link>
-                  <Link Link className="dropdownlinks" to="/Signupclient"> Sign up as a Client</Link>
-                </div>
-
-                <button>Log In</button>
-                <div className="dropdowncontent">
-                  <Link Link className="dropdownlinks" to="/Loginvendor"> Login as a Vendor</Link>
-                  <Link Link className="dropdownlinks" to="/Loginclient"> Login as a Client</Link>
-                </div> */}
-
-                
-              {/* </div> */}
+              
             </div>
           </li>
           <li>

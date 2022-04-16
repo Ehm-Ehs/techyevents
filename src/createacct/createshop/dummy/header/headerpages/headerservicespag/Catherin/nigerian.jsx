@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 const PRODUCTS = [
-    {name: "Bridal makeup", description: "bridal makeup",amount: 30000, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkv3Zx-8W00Xihb-fKinU4MCCkoQy3YmqRQ&usqp=CAU" },
-    {name: "Traditional makeup",  description: "Traditional makeup", amount: 20000, currency: "Naira", currencySymbol: "#", img:"https://i.ytimg.com/vi/j0YBz_S_AGQ/maxresdefault.jpg" },
-
+    {name: "jollof rice", description: " Nigerian jollof",amount: 1500, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnVdSs5qNfzhqVw3xy-9d0QfP0xOybm1VX3w&usqp=CAU" },
+    {name: "Fried rice",  description: "Nigerian fried rice with sausage", amount: 2000, currency: "Naira", currencySymbol: "#", img:"https://sisijemimah.com/wp-content/uploads/2015/07/IMG_0011_20200824075644597-scaled.jpg" },
+    {name: "swallow and soup", description: "semovita and egusi", amount: 2000, currency: "Nigeria", currencySymbol: "#", img:"https://sisijemimah.com/wp-content/uploads/2015/07/IMG_0011_20200824075644597-scaled.jpg" },
+    {name: "moimoi", description: "Beans cake", amount: 500, currency: "Nigeria", currencySymbol: "#", img:"https://pulses.org/images/com_yoorecipe/422/cropped-moi-moi-rollup.jpg"},
+    {name: "yam porridge", description:"yam porridge and fish", amount: 1200, currency: "Naira", currencySymbol: "#", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3Ki9ioHIPBnS9joHUdCzF3zf8CaJXPBAkg&usqp=CAU" },
 ]
-function Makeup(){
+function Nigerian(){
    
     const [cart, setCart] = useState([]);
     const [cartTotal, setcartTotal] = useState(0);
@@ -25,7 +27,7 @@ function Makeup(){
         <>
        
         <div className="headline">
-            <strong>Chops</strong>
+            <strong>Nigerian</strong>
         </div>
        
         <div>
@@ -66,4 +68,4 @@ function Makeup(){
         </>
     )
 }
-export default Makeup;
+export default Nigerian;
